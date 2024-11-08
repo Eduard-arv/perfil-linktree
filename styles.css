@@ -1,67 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
+/* Aplicando la fuente Roboto */
+body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #1F1D1D;
-  }
-
-.container {
-    border: solid;
-    border: color rgb(240, 233, 233);
-    justify-content: center;
-}
-
-.profile-pic {
+    background-color: #252424;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    width: 100vw; /* Ancho completo de la ventana */
-    height: 100vh; /* Altura completa de la ventana */
-}
-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-.social-buttons {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
-.btn {
-    display: inline-block;
-    padding: 15px 32px;
-    margin: 10px 0;
-    color: white;
+
+/* Estilos del contenedor principal */
+.container {
     text-align: center;
-    text-decoration: none;
+    max-width: 900px;
+    background-color: #252424;
+    padding: 20px;
     border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-  }
-.acerca-de-mi { background-color: #88898B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.GitHub { background-color: #88898B;
-}
-.Linkedind { background-color: #88898B;
-}
-.contactame { background-color: #88898B;
-}
-.btn:hover {
-    opacity: 0.8; /* Efecto hover */
-}
-footer {
+
+/* Imagen de perfil */
+.profile-pic {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+/* Contenedor dinámico */
+#descripcion h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#descripcion p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Botones de enlaces */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.acerca-de-mi { background-color: #88898B;
+    color: black;
     font-weight: bold;
-    font-size: 15px;
-    color: rgb(212, 225, 236);
+}
+.GitHub { background-color: #88898B;
+    font-weight: bold;
+}
+.Linkedind { background-color: #88898B;
+    font-weight: bold;
+}
+.contactame { background-color: #88898B;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.03);
+    transition: transform 0.3s;
+
+}
+
+h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #ffffff;  
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+ol {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+ul {
+    font-size: 16px;
+    color: #ffffff;
+}
+/* Diseño responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }
