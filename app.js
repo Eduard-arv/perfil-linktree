@@ -3,8 +3,8 @@
  // Descripción del perfil en una constante
  const descripcionPerfil = "Estudiante en Desarrollo de Sotware 💻";
 
- // Obtenemos el elemento HTML con el ID "descripcion" (este elemento debe existir en tu HTML)
- const descripcion = document.getElementById("descripcion");
+ // Elemento HTML con el ID "descripcion"
+ const descripcion = document.getElementById("profile-info");
 
  // Creamos un nuevo elemento HTML de tipo "h1" (encabezado)
  const nameElement = document.createElement("h1");
@@ -20,3 +20,5 @@
  profileInfo.appendChild(nameElement);
  // Agregamos el párrafo (descripción) como hijo del elemento "profile-info"
  profileInfo.appendChild(descriptionElement);
+
+ 

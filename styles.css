@@ -1,4 +1,3 @@
-/* Aplicando la fuente Roboto */
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #252424;
@@ -36,13 +35,13 @@ img {
     height: 100px;
 }
 /* Contenedor dinámico */
-#descripcion h1 {
+#profile-info h1 {
     font-size: 24px;
     margin: 10px 0;
     color: #ffffff;
 }
 
-#descripcion p {
+#profile-info p {
     font-size: 14px;
     color: #ffffff;
 }
@@ -54,12 +53,12 @@ img {
     gap: 10px;
 }
 
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-  
     border: none;
     border-radius: 10px;
     font-size: 16px;
@@ -78,7 +77,27 @@ img {
 .Linkedind { background-color: #88898B;
     font-weight: bold;
 }
+
+.contacto-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
 .contactame { background-color: #88898B;
+    font-weight: bold;
+}
+
+.telefono { background-color: #88898B;
+    color: black;
+    font-weight: bold;
+}
+.correo { background-color: #88898B;
+    font-weight: bold;
+}
+.inicio { background-color: #88898B;
     font-weight: bold;
 }
 
