@@ -1,1 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #1F1D1D;
+  }
 
+.container {
+    border: solid;
+    border: color rgb(240, 233, 233);
+    justify-content: center;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Altura completa de la ventana */
+}
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 32px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+.acerca-de-mi { background-color: #88898B;
+}
+.GitHub { background-color: #88898B;
+}
+.Linkedind { background-color: #88898B;
+}
+.contactame { background-color: #88898B;
+}
+.btn:hover {
+    opacity: 0.8; /* Efecto hover */
+}
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(212, 225, 236);
+}
