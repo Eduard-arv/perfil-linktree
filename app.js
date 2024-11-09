@@ -16,9 +16,7 @@
  // Asignamos la descripción del perfil al contenido del párrafo
  descriptionElement.textContent = descripcionPerfil;
 
- // Agregamos el encabezado (nombre) como hijo del elemento "profile-info"
  profileInfo.appendChild(nameElement);
- // Agregamos el párrafo (descripción) como hijo del elemento "profile-info"
  profileInfo.appendChild(descriptionElement);
 
  
